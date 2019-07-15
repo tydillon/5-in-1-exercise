@@ -11,8 +11,13 @@ const ShowMovies = () => {
   }, [])
   return (
     <div>
-      <h1>This will display movies</h1>
-      {JSON.stringify(movies)}
+      <section className="hero is-bold is-primary">
+        <div className="hero-body">
+          <div className="container">
+            <h1 className="title">Favorite Movies</h1>
+          </div>
+        </div>
+      </section>
       <ul>
         {map(movie => {
           return <li key={movie.id}>{movie.title}</li>
